@@ -1,0 +1,143 @@
+//Q1====>412. Fizz Buzz
+#include <iostream>
+using namespace std;
+int main() {
+	int number;
+	cout << "Enter number" << endl;
+	cin >> number;
+	if (number % 3==0 && number % 5==0) {
+		cout << "FizzBuzz" << endl;
+	}
+	else if (number % 3==0) {
+		cout << "Fizz" << endl;
+	}
+	else if (number % 5==0) {
+		cout << "Buzz" << endl;
+	}
+	else {
+		cout << number << endl;
+	}
+	return 0;
+}
+//=======================================================================================================
+// //Q2====>1. Two Sum
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int n;
+//    cout << "Enter the number of elements to stop" << endl;
+//    cin >> n;
+//    int nums[100];
+//    cout << "Enter the numbers" << endl;
+//    for (int i = 0; i < n; i++) {
+//        cin >> nums[i];
+//    }
+//    int target;
+//    cout << "Enter the target sum is" << endl;
+//    cin >> target;
+//    for (int i = 0; i < n; i++) {
+//        for (int j = i + 1; j < n; j++) {
+//            if (nums[i] + nums[j] == target) {
+//                cout << "[" << i << ", " << j << "]" << endl;
+//                return 0;
+//            }
+//        }
+//    }
+//    cout << "error" << endl;
+//    return 0;
+//}
+//==============================================================================
+//Q3====>9. Palindrome Number
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int number;
+//    cout << "Enter a number" << endl;
+//    cin >> number;
+//    if (number < 0) {
+//        cout << "False" << endl;
+//        cout << "Explanation: Negative numbers are not palindromes. please enter positive number to complete" << endl;
+//        return 0;
+//    }
+//    int temp = number;
+//    int the_opposite_of_the_number = 0;
+//    while (temp > 0) {
+//        int last_number = temp % 10;
+//        the_opposite_of_the_number = the_opposite_of_the_number * 10 + last_number;
+//        temp = temp / 10;
+//    }
+//    if (the_opposite_of_the_number == number) {
+//        cout << "True" << endl;
+//        cout << "Explanation: " << number << " The number reads correctly from both sides " << endl;
+//    }
+//    else {
+//        cout << "False" << endl;
+//        cout << "Explanation: " << number << " The number not reads correctly from both sides" << endl;
+//    }
+//
+//    return 0;
+//}
+//============================================================================================================
+//Q4====>20. Valid Parentheses
+//#include <iostream>
+//using namespace std;
+//int main() {
+//	string brackets;
+//	cout << "Enter brackets to cheack" << endl;
+//	cin >> brackets;
+//	if (brackets == "()"|| brackets == "{}"|| brackets == "[]") {
+//		cout << "True" << endl;
+//	}
+//	else {
+//		cout << "False" << endl;
+//	}
+//	return 0;
+//}
+//========================================================================================
+//Q5====>204. Count Primes
+//#include <iostream>
+//using namespace std;
+//int main() {
+//    int number;
+//    cout << "Enter number" << endl;
+//    cin >> number;
+//    int count = 0;
+//    for (int num = 2; num < number; num++) {
+//        bool isPrime = true;
+//        for (int i = 2; i * i <= num; i++) {
+//            if (num % i == 0) {
+//                isPrime = false;
+//                break;
+//            }
+//        }
+//        if (isPrime) {
+//            count++;
+//        }
+//    }
+//
+//    cout  <<  count << endl;
+//
+//    return 0;
+//}
+// //==============================================================================================
+//Q6====>66.plus one
+//#include <iostream>
+//using namespace std;
+//int main(){
+//    int arr[1000] , num;
+//    cout << "Enter the number of digits" << endl;
+//    cin >> num;
+//    cout << "Enter the digits" << endl;
+//    for (int i = 0; i < num; i++)
+//    {
+//        cin >> arr[i];
+//    }
+//    arr[num - 1] += 1;
+//    for (int i = 0; i < num; i++)
+//    {
+//        cout << arr[i] << " ";
+//    }
+//    cout << endl;
+//
+//    return 0;
+//}
